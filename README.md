@@ -24,7 +24,8 @@ This extension finds the DOI of the research paper you're viewing and provides a
 
 ## Usage
 
-1. Find a research paper you want to download (e.g. https://ieeexplore.ieee.org/abstract/document/9039685)
+1. Find a research paper you want to download (e.g. )
+1. Find a research paper you want to download (e.g. https://dl.acm.org/doi/abs/10.1145/3325773.3325779)
 
 2. Click on the extension icon
 
