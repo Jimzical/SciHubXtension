@@ -1,0 +1,26 @@
+body {
+    width: 600px;
+    height: 200px;
+}
+
+#acho {
+    display: block;
+    margin: auto;
+}
+
+#dialog-box {
+    text-align: center;
+    font-size: medium;
+}
+.big-link {
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.tran{
+    /* width: min-content; */
+    height: min-content;
+    background-color: rgba(153, 202, 252, 0.1); /* #343a40 with 80% opacity */
+    /* background-color: rgba(164, 74, 26, 0.6); #343a40 with 80% opacity */
+    color: white
+}
