@@ -25,7 +25,7 @@ This extension finds the DOI of the research paper you're viewing and provides a
 ## Usage
 
 1. Find a research paper you want to download (e.g. )
-1. Find a research paper you want to download (e.g. https://dl.acm.org/doi/abs/10.1145/3325773.3325779)
+1. Find a research paper you want to download (e.g. [this](https://dl.acm.org/doi/abs/10.1145/3325773.3325779) or [that](https://ieeexplore.ieee.org/document/8300913))
 
 2. Click on the extension icon
 
