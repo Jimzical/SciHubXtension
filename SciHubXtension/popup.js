@@ -19,7 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     dialogBox.innerHTML = '<div class="alert alert-warning " role="alert" style=" background-color: rgba(164, 74, 26, 0.6);">DOI found: '+doi+'</div>';
                 }
                 // dialogBox.innerHTML = "<a href='"+createLink(doi)+"' target='_blank', class='big-link'>Go to PDF</a>";
-                dialogBox.innerHTML = "<a href='"+createLink(doi)+"' target='_blank', class='big-link badge badge-primary'>Go to PDF</a>";
+                // dialogBox.innerHTML = "<a href='"+createLink(doi)+"' target='_blank', class='big-link badge badge-primary'>Go to PDF</a>";
+                dialogBox.innerHTML = `
+                <a href="${createLink(doi)}" target="_blank" class="big-link badge badge-primary">Go to PDF</a>
+                <br/>
+                <br/>
+                <a href="${createLink(doi.toLowerCase())}" target="_blank" class="small-link badge badge-pill badge-secondary">Lowercase Alt</a>
+                 `;
             }
         );
     });

@@ -17,10 +17,36 @@ body {
     font-weight: bold;
 }
 
+.small-link {
+    font-size: 0.75em; /* Adjust as needed */
+    font-weight: bold;
+    opacity: 0.7;
+    color:white;
+}
+
+.small-link:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .tran{
     /* width: min-content; */
     height: min-content;
     background-color: rgba(153, 202, 252, 0.1); /* #343a40 with 80% opacity */
     /* background-color: rgba(164, 74, 26, 0.6); #343a40 with 80% opacity */
     color: white
+}
+
+.doi-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #067cb7;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
 }
