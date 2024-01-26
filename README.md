@@ -31,3 +31,19 @@ This extension finds the DOI of the research paper you're viewing and provides a
 3. Click on the `Go to PDF` button
 
 4. The PDF will open in a new tab 
+
+
+Updates
+=======
+- 1.0.0
+  - Initial Release
+  - Basic functionality to get the DOI and redirect to the PDF
+
+Future Updates
+=======
+- Add a context menu option to open the PDF
+
+- or have the popup open automatically when a research paper is detected
+
+- Try replacing the `Alt` button by running doi and doi.ToLowerCase() simultaneously and using the first one that returns a valid link
+
