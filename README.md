@@ -1,6 +1,5 @@
 # SciHubXtension
-Research Papers Finder
-
+Research Paper Finding Chrome Extension
 
 This extension finds the DOI of the research paper you're viewing and provides a direct link to the PDF.
 > This works by taking advantage of the scihub database
