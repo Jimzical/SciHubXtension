@@ -44,7 +44,8 @@ Updates
   - Added a context menu to the extension
 - 1.1.1
   - Fixed bug where No results returned from excecuteScript
-
+- 1.1.2
+  - Cleaned up popup.html
 Future Updates
 ==============
 - Find a better way to try to get the pdf with a single button that somehow tries both normal and lowercase DOI and tries to get that pdf
