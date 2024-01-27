@@ -40,8 +40,5 @@ Updates
   - Basic functionality to get the DOI and redirect to the PDF
 - 1.0.1
   - Added a Notification to display the DOI and PDF link
-Future Updates
-=======
-
-- Add a context menu option to open the PDF
-
+- 1.1.0
+  - Added a context menu to the extension
