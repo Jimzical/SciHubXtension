@@ -46,6 +46,8 @@ Updates
   - Fixed bug where No results returned from excecuteScript
 - 1.1.2
   - Cleaned up popup.html
+- 1.1.3
+  - Fixed bug where the extension would not work sometimes due to the page not being fully loaded
 Future Updates
 ==============
 - Find a better way to try to get the pdf with a single button that somehow tries both normal and lowercase DOI and tries to get that pdf

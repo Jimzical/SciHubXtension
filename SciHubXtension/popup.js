@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
             { code: 'document.body.innerHTML' },
             (results) => {
                 if (!results || results.length === 0) {
-                    console.error('No results returned from executeScript');
+                    // console.error('No results returned from executeScript. This may be due to the script not being injected correctly, or the script not returning any results.');
+                    // dialogBox.innerHTML = '<div class="alert alert-warning" role="alert">Unable to retrieve data from the current page. Please ensure the page is fully loaded and try again.</div>';
+                    dialogBox.innerHTML = '<div class="alert alert-warning" role="alert">This extension doesn\'t work on Chrome\'s New Tab page. Please navigate to a different page and try again.</div>';
                     return;
                 }
                 const doi = findDOI(results[0]);
