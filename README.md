@@ -31,3 +31,22 @@ This extension finds the DOI of the research paper you're viewing and provides a
 3. Click on the `Go to PDF` button
 
 4. The PDF will open in a new tab 
+
+
+Updates
+=======
+- 1.0.0
+  - Initial Release
+  - Basic functionality to get the DOI and redirect to the PDF
+- 1.0.1
+  - Added a Notification to display the DOI and PDF link
+- 1.1.0
+  - Added a context menu to the extension
+- 1.1.1
+  - Fixed bug where No results returned from excecuteScript
+- 1.1.2
+  - Cleaned up popup.html
+Future Updates
+==============
+- Find a better way to try to get the pdf with a single button that somehow tries both normal and lowercase DOI and tries to get that pdf
+- Fix the icon issues
