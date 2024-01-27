@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             activeTab.id,
             { code: 'document.body.innerHTML' },
             (results) => {
+                if (!results || results.length === 0) {
+                    console.error('No results returned from executeScript');
+                    return;
+                }
                 const doi = findDOI(results[0]);
                 
                 if (doi == null) {

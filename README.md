@@ -42,3 +42,10 @@ Updates
   - Added a Notification to display the DOI and PDF link
 - 1.1.0
   - Added a context menu to the extension
+- 1.1.1
+  - Fixed bug where No results returned from excecuteScript
+
+Future Updates
+==============
+- Find a better way to try to get the pdf with a single button that somehow tries both normal and lowercase DOI and tries to get that pdf
+- Fix the icon issues
