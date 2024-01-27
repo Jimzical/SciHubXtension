@@ -16,16 +16,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
                 else{
-                    dialogBox.innerHTML = '<div class="alert alert-warning " role="alert" style=" background-color: rgba(164, 74, 26, 0.6);">DOI found: '+doi+'</div>';
+                    // dialogBox.innerHTML = '<div class="alert alert-warning " role="alert" style=" background-color: rgba(164, 74, 26, 0.6);">DOI found: '+doi+'</div>';
+                    // Create the notification
+                    chrome.notifications.create('doiFound', {
+                        type: 'basic',
+                        iconUrl: 'images/icon32.png',
+                        title: 'DOI Found',
+                        message: 'DOI: ' + doi
+                    }, function(notificationId) {});
+
+                    // Listen for when the notification is clicked
+                    chrome.notifications.onClicked.addListener(function(notificationId) {
+                        // Check if the clicked notification is the one we created
+                        if (notificationId === 'doiFound') {
+                            // Open a new tab with the desired URL
+                            chrome.tabs.create({ url: createLink(doi) });
+                        }
+                    });
+
+
+                    dialogBox.innerHTML = `
+                    <a href="${createLink(doi)}" target="_blank" class="big-link badge badge-primary">Go to PDF</a>
+                    <br/>
+                    <br/>
+                    <a href="${createLink(doi.toLowerCase())}" target="_blank" class="small-link badge badge-pill badge-secondary">Lowercase Alt</a>
+                     `;
                 }
-                // dialogBox.innerHTML = "<a href='"+createLink(doi)+"' target='_blank', class='big-link'>Go to PDF</a>";
-                // dialogBox.innerHTML = "<a href='"+createLink(doi)+"' target='_blank', class='big-link badge badge-primary'>Go to PDF</a>";
-                dialogBox.innerHTML = `
-                <a href="${createLink(doi)}" target="_blank" class="big-link badge badge-primary">Go to PDF</a>
-                <br/>
-                <br/>
-                <a href="${createLink(doi.toLowerCase())}" target="_blank" class="small-link badge badge-pill badge-secondary">Lowercase Alt</a>
-                 `;
             }
         );
     });

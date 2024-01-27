@@ -38,12 +38,10 @@ Updates
 - 1.0.0
   - Initial Release
   - Basic functionality to get the DOI and redirect to the PDF
-
+- 1.0.1
+  - Added a Notification to display the DOI and PDF link
 Future Updates
 =======
+
 - Add a context menu option to open the PDF
-
-- or have the popup open automatically when a research paper is detected
-
-- Try replacing the `Alt` button by running doi and doi.ToLowerCase() simultaneously and using the first one that returns a valid link
 
